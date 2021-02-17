@@ -1,6 +1,6 @@
 {
   "name": "jquery-devrama-slider",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "description": "jQuery plugin - Image/HTML slider",
   "main": "jquery.devrama.slider.js",
   "scripts": {
@@ -25,6 +25,9 @@
     "gallery"
   ],
   "author": "WON JONG YOO",
+  "contributors": [
+    "Jérémy Munsch <github@jeremydev.ovh> https://jeremydev.ovh"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Kaaadpepper/Devrama-Slider/issues"
