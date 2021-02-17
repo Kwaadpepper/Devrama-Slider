@@ -4,11 +4,12 @@
   "description": "jQuery plugin - Image/HTML slider",
   "main": "jquery.devrama.slider.js",
   "scripts": {
+    "minify": "minify jquery.devrama.slider.js > jquery.devrama.slider.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Devrama/Devrama-Slider.git"
+    "url": "git+https://github.com/Kaaadpepper/Devrama-Slider.git"
   },
   "keywords": [
     "jquery-plugin",
@@ -26,9 +27,10 @@
   "author": "WON JONG YOO",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Devrama/Devrama-Slider/issues"
+    "url": "https://github.com/Kaaadpepper/Devrama-Slider/issues"
   },
   "homepage": "http://devrama.com/static/devrama-slider/",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "minify": "^7.0.1"
+  }
 }
