@@ -31,6 +31,11 @@ HOW TO USE IT
 
 [http://devrama.com/static/devrama-slider/](http://devrama.com/static/devrama-slider/)
 
+Updated
+--------
+
+ - added npm run minify
+ - added onChange : function() {}  event in options
 
 
 LICENSE

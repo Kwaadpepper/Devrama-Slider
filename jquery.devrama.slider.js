@@ -1098,7 +1098,13 @@
 			
 			that._prev_next_process($element, callback);
 			
-			
+			if (typeof that.options.onChange === 'function') {
+				try {
+					that.options.onChange();
+				} catch (e) {
+					console.error(e);
+				}
+			}
 		
 		},
 		
@@ -1114,6 +1120,14 @@
 			$element = this.$sliders.eq(this.current_slide);
 			
 			that._prev_next_process($element, callback);
+
+			if (typeof that.options.onChange === 'function') {
+				try {
+					that.options.onChange();
+				} catch (e) {
+					console.error(e);
+				}
+			}
 		
 		},
 		
