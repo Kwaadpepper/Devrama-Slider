@@ -36,6 +36,7 @@ Updated
 
  - added npm run minify
  - added onChange : function() {}  event in options
+ - added onChanged : function() {}  event in options
 
 
 LICENSE

@@ -1,5 +1,5 @@
 /**
- * DrSlider Version 0.9.5
+ * DrSlider Version 0.9.7
  * Developed by devrama.com
  * 
  * Licensed under the MIT license:
@@ -20,6 +20,8 @@
 		this.play_timer = true;
 		this.active_timer = false;
 		this.on_transition = false;
+		this.onChange = false;
+		this.onChanged = false;
 		this._$progress_bar = undefined;
 		this.all_transitions = ['slide-left', 'slide-right', 'slide-top', 'slide-bottom', 'fade', 'split', 'split3d', 'door', 'wave-left', 'wave-right', 'wave-top', 'wave-bottom'];
 		
@@ -1172,12 +1174,24 @@
 					
 					if($element.find('[data-pos]').length > 0){
 						that._showAnimation($element, function(){
-						
+							if (typeof that.options.onChanged === 'function') {
+								try {
+									that.options.onChanged();
+								} catch (e) {
+									console.error(e);
+								}
+							}
 						});
 					}
 					else {
 						that._showImage($element, function(){
-							
+							if (typeof that.options.onChanged === 'function') {
+								try {
+									that.options.onChanged();
+								} catch (e) {
+									console.error(e);
+								}
+							}
 						});
 					}
 				});
